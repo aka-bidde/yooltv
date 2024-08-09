@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Player Website</title>
+    <link rel="stylesheet" href="/formstyl.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/yool.png" class="logo" />
+        <div>
+            <button id="loginButton">Sign In</button>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <!-- Existing content here -->
+        </div>
+    </main>
+    <!-- Modal HTML -->
+    <div id="loginModal" class="modal">
+        <div class="login-container">
+            <form id="loginForm" class="login-form">
+                <span class="close" id="closeModal">&times;</span>
+                <h1>Sign In</h1>
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Email or phone number</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <div class="help-links">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Need help?</a>
+                </div>
+                <div class="signup-now">
+                    <span>New to Netflix?</span>
+                    <a href="#">Sign up now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/scrip.js"></script>
+</body>
+</html>
